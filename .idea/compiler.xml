@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="activebrower" />
+        <module name="activeMQMusterAndSlave" />
+        <module name="activeQueue" />
+        <module name="activeSender" />
+        <module name="activetopic" />
+        <module name="apringactivemq2" />
+        <module name="springactivemq" />
+        <module name="springactivemq3Eachother" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="activebrower" target="1.8" />
+      <module name="activeMQMusterAndSlave" target="1.8" />
+      <module name="activeQueue" target="1.8" />
+      <module name="activeSender" target="1.8" />
+      <module name="activetopic" target="1.8" />
+      <module name="apringactivemq2" target="1.8" />
+      <module name="springactivemq" target="1.8" />
+      <module name="springactivemq3Eachother" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

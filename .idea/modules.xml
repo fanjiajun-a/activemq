@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/activeMQMusterAndSlave/activeMQMusterAndSlave.iml" filepath="$PROJECT_DIR$/activeMQMusterAndSlave/activeMQMusterAndSlave.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activeQueue/activeQueue.iml" filepath="$PROJECT_DIR$/activeQueue/activeQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activeSender/activeSender.iml" filepath="$PROJECT_DIR$/activeSender/activeSender.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activebrower/activebrower.iml" filepath="$PROJECT_DIR$/activebrower/activebrower.iml" />
+      <module fileurl="file://$PROJECT_DIR$/activetopic/activetopic.iml" filepath="$PROJECT_DIR$/activetopic/activetopic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apringactivemq2/apringactivemq2.iml" filepath="$PROJECT_DIR$/apringactivemq2/apringactivemq2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springactivemq/springactivemq.iml" filepath="$PROJECT_DIR$/springactivemq/springactivemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springactivemq3Eachother/springactivemq3Eachother.iml" filepath="$PROJECT_DIR$/springactivemq3Eachother/springactivemq3Eachother.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置ConnectFactory信息-->
+    <bean id="jmsFactory" class="org.apache.activemq.pool.PooledConnectionFactory">
+        <property name="connectionFactory">
+            <bean class="org.apache.activemq.ActiveMQConnectionFactory">
+                <property name="brokerURL" value="tcp://127.0.0.1:61616"></property>
+            </bean>
+        </property>
+        <property name="maxConnections" value="100"></property>
+    </bean>
+    <!--jms配置-->
+    <bean id="jmsTemplates" class="org.springframework.jms.core.JmsTemplate">
+        <property name="connectionFactory" ref="jmsFactory"></property>
+        <property name="defaultDestinationName" value="subject"></property>
+        <!--通过false和true来定义我们是采取一对一还是一对多模式
+            false ： 一对一    true 一对多
+        -->
+        <property name="pubSubDomain" value="true"></property>
+    </bean>
+
+    <!--配置队列的名字-->
+    <bean class="org.apache.activemq.command.ActiveMQQueue" id="destination" >
+
+        <constructor-arg index="0" value="queue1"></constructor-arg>
+
+    </bean>
+
+    <bean name="receive" class="com.jun.receive.Receiver">
+        <property name="jmsTemplate" ref="jmsTemplates"/>
+    </bean>
+</beans>
