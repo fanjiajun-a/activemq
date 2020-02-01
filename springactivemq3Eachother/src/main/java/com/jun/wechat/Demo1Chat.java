@@ -23,7 +23,7 @@ public class Demo1Chat implements MessageListener {
     public Demo1Chat(String topicFactory,String topicName,String userName) throws NamingException, JMSException {
 
 
-        //使用jndi配置文件创建一个连接
+        //使用jndi配置文件创建一个连接  重要
 
         InitialContext initialContext = new InitialContext();
 
